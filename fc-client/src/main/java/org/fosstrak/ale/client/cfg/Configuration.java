@@ -23,6 +23,7 @@ package org.fosstrak.ale.client.cfg;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -63,7 +64,7 @@ public class Configuration {
 		InputStream inputStream = this.getClass().getResourceAsStream(file);
 		try {
 			m_properties = new Properties();
-			m_properties.load(inputStream);
+			m_properties.load(new InputStreamReader(inputStream,"utf-8"));
 		} catch (Exception e) {
 			m_properties = null;
 			s_log.error(String.format("could not load configuration file '%s'", file));

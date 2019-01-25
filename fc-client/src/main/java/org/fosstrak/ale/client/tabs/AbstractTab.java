@@ -31,6 +31,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 import java.util.Locale;
 import java.util.PropertyResourceBundle;
@@ -243,7 +244,7 @@ public abstract class AbstractTab extends JPanel {
 			if (languageStream == null) {
 				throw new IllegalArgumentException("Could not load language package from classpath (" + DEFAULT_LOCALE + ")");
 			}
-			m_guiText = new PropertyResourceBundle(languageStream);        
+			m_guiText = new PropertyResourceBundle(new InputStreamReader(languageStream, "utf-8"));
 			initializeGUI();
 		} catch (Exception e) {
 			throw new FosstrakAleClientException(e);

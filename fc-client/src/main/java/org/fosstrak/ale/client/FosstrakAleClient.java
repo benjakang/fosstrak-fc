@@ -113,16 +113,16 @@ public class FosstrakAleClient extends JFrame  {
         	ALELRClient lrClient = new ALELRClient(this);
 			lrClient.initialize();
 			
-			m_tab.addTab("Event Cycle", aleClient);
-			m_tab.addTab("Logical Reader", lrClient);
+			m_tab.addTab("事件周期", aleClient);
+			m_tab.addTab("逻辑阅读器", lrClient);
         } catch (Exception e) {
-        	s_log.error("Could not setup basic GUI components.");
+        	s_log.error("无法建立基础GUI组件.");
         	throw new FosstrakAleClientException(e);
         }		
 		add(m_tab);
 				
-		JMenu fileMenuItem = new JMenu("File");
-		JMenuItem exitMenuItem = new JMenuItem("Quit");
+		JMenu fileMenuItem = new JMenu("文件");
+		JMenuItem exitMenuItem = new JMenuItem("退出");
 		exitMenuItem.addMouseListener(new MouseAdapter() {
 			public void mouseReleased(MouseEvent e) {
 				for (Component comp : m_tab.getComponents())
@@ -137,8 +137,8 @@ public class FosstrakAleClient extends JFrame  {
 		});
 		fileMenuItem.add(exitMenuItem);
 		
-		JMenu esMenuItem = new JMenu("Sink");
-		JMenuItem createSink = new JMenuItem("Create Sink");
+		JMenu esMenuItem = new JMenu("接收");
+		JMenuItem createSink = new JMenuItem("创建接收窗口");
 		createSink.addActionListener(new ActionListener() {
 			
 			@Override
@@ -182,7 +182,7 @@ public class FosstrakAleClient extends JFrame  {
 		final JDialog dialog = new JDialog(this, true);
 		dialog.setBounds(xPos, yPos, width, height);
 		dialog.setLayout(new BorderLayout(10, 10));
-		dialog.setTitle("Error message:");
+		dialog.setTitle("错误信息：");
 		
 		// message label
 		JLabel messageLabel = new JLabel(message);
@@ -196,7 +196,7 @@ public class FosstrakAleClient extends JFrame  {
 		reasonTextArea.setEditable(false);
 		
 		// ok button
-		JButton okButton = new JButton("OK");
+		JButton okButton = new JButton("确定");
 		okButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dialog.setVisible(false);
@@ -235,10 +235,10 @@ public class FosstrakAleClient extends JFrame  {
 		final JDialog dialog = new JDialog(this, true);
 		dialog.setBounds(xPos, yPos, width, height);
 		dialog.setLayout(new BorderLayout(10, 10));
-		dialog.setTitle("Endpoint connection");
+		dialog.setTitle("目标服务器");
 		
 		// message label
-		JLabel messageLabel = new JLabel("Endpoint address:");
+		JLabel messageLabel = new JLabel("目标服务器地址：");
 		JPanel messageLabelPanel = new JPanel();
 		messageLabelPanel.add(messageLabel);
 		
@@ -248,7 +248,7 @@ public class FosstrakAleClient extends JFrame  {
 		fldEndpoint.setEditable(true);
 
 		// ok button
-		JButton okButton = new JButton("OK");
+		JButton okButton = new JButton("确定");
 		okButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dialog.setVisible(false);
