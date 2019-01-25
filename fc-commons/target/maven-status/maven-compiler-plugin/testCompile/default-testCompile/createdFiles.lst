@@ -1,0 +1,3 @@
+org\fosstrak\ale\util\test\ECReportSetEnumTest.class
+org\fosstrak\ale\util\test\SerializerAndDeserializerUtilsTest.class
+org\fosstrak\ale\util\test\StreamUtilTest.class
