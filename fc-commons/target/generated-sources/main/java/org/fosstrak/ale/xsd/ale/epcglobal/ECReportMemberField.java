@@ -173,8 +173,8 @@ public class ECReportMemberField {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Element }
      * {@link Object }
+     * {@link Element }
      * 
      * 
      */

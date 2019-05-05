@@ -59,11 +59,12 @@
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.eclipse.jst.ws.consumption</groupId>
-      <artifactId>webserviceutils</artifactId>
-      <version>1.0.102.v200609220223</version>
-    </dependency>
+    <!--<dependency>-->
+        <!--<groupId>org.eclipse.jst</groupId>-->
+        <!--<artifactId>org.eclipse.jst.ws.consumption</artifactId>-->
+        <!--&lt;!&ndash;<version>1.0.305-20081006</version>&ndash;&gt;-->
+    <!--</dependency>-->
+
   </dependencies>
 
 

@@ -20,7 +20,9 @@
 package org.fosstrak.ale.server.readers.test;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -28,6 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang.ArrayUtils;
+import org.apache.cxf.binding.soap.saaj.SAAJUtils;
 import org.apache.log4j.Logger;
 import org.epcglobalinc.tdt.LevelTypeList;
 import org.fosstrak.ale.exception.ImplementationException;
@@ -54,12 +57,15 @@ public class TestAdaptor extends BaseReader {
 	private Tag[] tagsAsArray;
 	private int tagSize;
 	private boolean running = false;
+	private Server server;
 	
 	/**
 	 * loads a list of tags.
 	 * @throws Exception upon problems.
 	 */
 	public void loadTags() throws Exception {
+		System.out.println("loadTags()");
+		log.debug("loadTags()");
 		List<Tag> tags = new ArrayList<Tag>();
 		BufferedReader bis = new BufferedReader(new InputStreamReader(TestAdaptor.class.getResourceAsStream("/tags.txt")));
 		
@@ -140,11 +146,25 @@ public class TestAdaptor extends BaseReader {
 	@Override
 	public void initialize(String name, LRSpec spec) throws ImplementationException {
 		super.initialize(name, spec);
+		System.out.println("initialize()");
+//		try {
+//			System.out.println("lllllll");
+//			server = new Server();
+//			server.connect();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//		try {
+//			server.disconnect();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 		try {
 			loadTags();
 		} catch (Exception e) {
 			throw new ImplementationException(e);
 		}
+
 	}
 
 	private boolean isRunning() {
@@ -154,6 +174,7 @@ public class TestAdaptor extends BaseReader {
 	@Override
 	public void addTag(Tag tag) {
 		tag.addTrace(getName());
+//		System.out.println("addTag()");
 		
 		setChanged();
 		notifyObservers(tag);		
@@ -171,16 +192,21 @@ public class TestAdaptor extends BaseReader {
 	@Override
 	public void connectReader() {
 		setConnected();
+		System.out.println("connectReader()");
+
 	}
 
 	@Override
 	public void disconnectReader() {
 		stop();
+
 		setDisconnected();
+
 	}
 
 	@Override
 	public void start() {
+		System.out.println("start()");
 		if (thread != null) {
 			stop();
 		}
@@ -193,6 +219,7 @@ public class TestAdaptor extends BaseReader {
 
 	@Override
 	public void stop() {
+		System.out.println("stop()");
 		log.info("stopping reader.");
 		running = false;
 		thread.interrupt();
@@ -207,6 +234,7 @@ public class TestAdaptor extends BaseReader {
 	@Override
 	public void update(LRSpec spec) {
 		boolean started = isStarted();
+		System.out.println("update()");
 		
 		disconnectReader();
 		logicalReaderSpec = spec;

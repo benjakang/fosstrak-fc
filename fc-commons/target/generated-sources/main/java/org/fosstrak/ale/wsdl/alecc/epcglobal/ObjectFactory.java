@@ -107,203 +107,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DefineEPCCache }
-     * 
-     */
-    public DefineEPCCache createDefineEPCCache() {
-        return new DefineEPCCache();
-    }
-
-    /**
-     * Create an instance of {@link GetEPCCacheContents }
-     * 
-     */
-    public GetEPCCacheContents createGetEPCCacheContents() {
-        return new GetEPCCacheContents();
-    }
-
-    /**
-     * Create an instance of {@link InvalidURIException }
-     * 
-     */
-    public InvalidURIException createInvalidURIException() {
-        return new InvalidURIException();
-    }
-
-    /**
-     * Create an instance of {@link EPCCacheSpecValidationException }
-     * 
-     */
-    public EPCCacheSpecValidationException createEPCCacheSpecValidationException() {
-        return new EPCCacheSpecValidationException();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfString }
-     * 
-     */
-    public ArrayOfString createArrayOfString() {
-        return new ArrayOfString();
-    }
-
-    /**
-     * Create an instance of {@link GetCCSpec }
-     * 
-     */
-    public GetCCSpec createGetCCSpec() {
-        return new GetCCSpec();
-    }
-
-    /**
-     * Create an instance of {@link UndefineResult }
-     * 
-     */
-    public UndefineResult createUndefineResult() {
-        return new UndefineResult();
-    }
-
-    /**
-     * Create an instance of {@link Define }
-     * 
-     */
-    public Define createDefine() {
-        return new Define();
-    }
-
-    /**
      * Create an instance of {@link SubscribeResult }
      * 
      */
     public SubscribeResult createSubscribeResult() {
         return new SubscribeResult();
-    }
-
-    /**
-     * Create an instance of {@link GetRNG }
-     * 
-     */
-    public GetRNG createGetRNG() {
-        return new GetRNG();
-    }
-
-    /**
-     * Create an instance of {@link Immediate }
-     * 
-     */
-    public Immediate createImmediate() {
-        return new Immediate();
-    }
-
-    /**
-     * Create an instance of {@link NoSuchNameException }
-     * 
-     */
-    public NoSuchNameException createNoSuchNameException() {
-        return new NoSuchNameException();
-    }
-
-    /**
-     * Create an instance of {@link ReplenishEPCCacheResult }
-     * 
-     */
-    public ReplenishEPCCacheResult createReplenishEPCCacheResult() {
-        return new ReplenishEPCCacheResult();
-    }
-
-    /**
-     * Create an instance of {@link DefineEPCCacheResult }
-     * 
-     */
-    public DefineEPCCacheResult createDefineEPCCacheResult() {
-        return new DefineEPCCacheResult();
-    }
-
-    /**
-     * Create an instance of {@link DefineRNGResult }
-     * 
-     */
-    public DefineRNGResult createDefineRNGResult() {
-        return new DefineRNGResult();
-    }
-
-    /**
-     * Create an instance of {@link RemoveAssocTableEntries }
-     * 
-     */
-    public RemoveAssocTableEntries createRemoveAssocTableEntries() {
-        return new RemoveAssocTableEntries();
-    }
-
-    /**
-     * Create an instance of {@link UndefineRNG }
-     * 
-     */
-    public UndefineRNG createUndefineRNG() {
-        return new UndefineRNG();
-    }
-
-    /**
-     * Create an instance of {@link ReplenishEPCCache }
-     * 
-     */
-    public ReplenishEPCCache createReplenishEPCCache() {
-        return new ReplenishEPCCache();
-    }
-
-    /**
-     * Create an instance of {@link Unsubscribe }
-     * 
-     */
-    public Unsubscribe createUnsubscribe() {
-        return new Unsubscribe();
-    }
-
-    /**
-     * Create an instance of {@link RemoveAssocTableEntry }
-     * 
-     */
-    public RemoveAssocTableEntry createRemoveAssocTableEntry() {
-        return new RemoveAssocTableEntry();
-    }
-
-    /**
-     * Create an instance of {@link Subscribe }
-     * 
-     */
-    public Subscribe createSubscribe() {
-        return new Subscribe();
-    }
-
-    /**
-     * Create an instance of {@link AssocTableValidationException }
-     * 
-     */
-    public AssocTableValidationException createAssocTableValidationException() {
-        return new AssocTableValidationException();
-    }
-
-    /**
-     * Create an instance of {@link GetEPCCache }
-     * 
-     */
-    public GetEPCCache createGetEPCCache() {
-        return new GetEPCCache();
-    }
-
-    /**
-     * Create an instance of {@link DuplicateNameException }
-     * 
-     */
-    public DuplicateNameException createDuplicateNameException() {
-        return new DuplicateNameException();
-    }
-
-    /**
-     * Create an instance of {@link NoSuchSubscriberException }
-     * 
-     */
-    public NoSuchSubscriberException createNoSuchSubscriberException() {
-        return new NoSuchSubscriberException();
     }
 
     /**
@@ -315,91 +123,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InvalidEPCException }
+     * Create an instance of {@link UndefineResult }
      * 
      */
-    public InvalidEPCException createInvalidEPCException() {
-        return new InvalidEPCException();
+    public UndefineResult createUndefineResult() {
+        return new UndefineResult();
     }
 
     /**
-     * Create an instance of {@link UndefineRNGResult }
+     * Create an instance of {@link NoSuchNameException }
      * 
      */
-    public UndefineRNGResult createUndefineRNGResult() {
-        return new UndefineRNGResult();
+    public NoSuchNameException createNoSuchNameException() {
+        return new NoSuchNameException();
     }
 
     /**
-     * Create an instance of {@link GetAssocTable }
+     * Create an instance of {@link DuplicateNameException }
      * 
      */
-    public GetAssocTable createGetAssocTable() {
-        return new GetAssocTable();
-    }
-
-    /**
-     * Create an instance of {@link UndefineAssocTable }
-     * 
-     */
-    public UndefineAssocTable createUndefineAssocTable() {
-        return new UndefineAssocTable();
-    }
-
-    /**
-     * Create an instance of {@link InvalidAssocTableEntryException }
-     * 
-     */
-    public InvalidAssocTableEntryException createInvalidAssocTableEntryException() {
-        return new InvalidAssocTableEntryException();
-    }
-
-    /**
-     * Create an instance of {@link ALEException }
-     * 
-     */
-    public ALEException createALEException() {
-        return new ALEException();
-    }
-
-    /**
-     * Create an instance of {@link GetSubscribers }
-     * 
-     */
-    public GetSubscribers createGetSubscribers() {
-        return new GetSubscribers();
-    }
-
-    /**
-     * Create an instance of {@link DefineRNG }
-     * 
-     */
-    public DefineRNG createDefineRNG() {
-        return new DefineRNG();
-    }
-
-    /**
-     * Create an instance of {@link DefineAssocTable }
-     * 
-     */
-    public DefineAssocTable createDefineAssocTable() {
-        return new DefineAssocTable();
-    }
-
-    /**
-     * Create an instance of {@link RemoveAssocTableEntriesResult }
-     * 
-     */
-    public RemoveAssocTableEntriesResult createRemoveAssocTableEntriesResult() {
-        return new RemoveAssocTableEntriesResult();
-    }
-
-    /**
-     * Create an instance of {@link RemoveAssocTableEntryResult }
-     * 
-     */
-    public RemoveAssocTableEntryResult createRemoveAssocTableEntryResult() {
-        return new RemoveAssocTableEntryResult();
+    public DuplicateNameException createDuplicateNameException() {
+        return new DuplicateNameException();
     }
 
     /**
@@ -411,11 +155,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UndefineAssocTableResult }
+     * Create an instance of {@link Subscribe }
      * 
      */
-    public UndefineAssocTableResult createUndefineAssocTableResult() {
-        return new UndefineAssocTableResult();
+    public Subscribe createSubscribe() {
+        return new Subscribe();
     }
 
     /**
@@ -427,99 +171,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RNGValidationException }
-     * 
-     */
-    public RNGValidationException createRNGValidationException() {
-        return new RNGValidationException();
-    }
-
-    /**
-     * Create an instance of {@link GetAssocTableEntries }
-     * 
-     */
-    public GetAssocTableEntries createGetAssocTableEntries() {
-        return new GetAssocTableEntries();
-    }
-
-    /**
-     * Create an instance of {@link UnsubscribeResult }
-     * 
-     */
-    public UnsubscribeResult createUnsubscribeResult() {
-        return new UnsubscribeResult();
-    }
-
-    /**
-     * Create an instance of {@link DuplicateSubscriptionException }
-     * 
-     */
-    public DuplicateSubscriptionException createDuplicateSubscriptionException() {
-        return new DuplicateSubscriptionException();
-    }
-
-    /**
-     * Create an instance of {@link DepleteEPCCache }
-     * 
-     */
-    public DepleteEPCCache createDepleteEPCCache() {
-        return new DepleteEPCCache();
-    }
-
-    /**
-     * Create an instance of {@link ImplementationException }
-     * 
-     */
-    public ImplementationException createImplementationException() {
-        return new ImplementationException();
-    }
-
-    /**
-     * Create an instance of {@link EmptyParms }
-     * 
-     */
-    public EmptyParms createEmptyParms() {
-        return new EmptyParms();
-    }
-
-    /**
-     * Create an instance of {@link ParameterForbiddenException }
-     * 
-     */
-    public ParameterForbiddenException createParameterForbiddenException() {
-        return new ParameterForbiddenException();
-    }
-
-    /**
-     * Create an instance of {@link DefineAssocTableResult }
-     * 
-     */
-    public DefineAssocTableResult createDefineAssocTableResult() {
-        return new DefineAssocTableResult();
-    }
-
-    /**
-     * Create an instance of {@link PutAssocTableEntriesResult }
-     * 
-     */
-    public PutAssocTableEntriesResult createPutAssocTableEntriesResult() {
-        return new PutAssocTableEntriesResult();
-    }
-
-    /**
-     * Create an instance of {@link GetAssocTableValue }
-     * 
-     */
-    public GetAssocTableValue createGetAssocTableValue() {
-        return new GetAssocTableValue();
-    }
-
-    /**
      * Create an instance of {@link Poll }
      * 
      */
     public Poll createPoll() {
         return new Poll();
+    }
+
+    /**
+     * Create an instance of {@link InvalidAssocTableEntryException }
+     * 
+     */
+    public InvalidAssocTableEntryException createInvalidAssocTableEntryException() {
+        return new InvalidAssocTableEntryException();
     }
 
     /**
@@ -531,11 +195,227 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UndefineEPCCache }
+     * Create an instance of {@link RemoveAssocTableEntriesResult }
      * 
      */
-    public UndefineEPCCache createUndefineEPCCache() {
-        return new UndefineEPCCache();
+    public RemoveAssocTableEntriesResult createRemoveAssocTableEntriesResult() {
+        return new RemoveAssocTableEntriesResult();
+    }
+
+    /**
+     * Create an instance of {@link AssocTableValidationException }
+     * 
+     */
+    public AssocTableValidationException createAssocTableValidationException() {
+        return new AssocTableValidationException();
+    }
+
+    /**
+     * Create an instance of {@link InvalidURIException }
+     * 
+     */
+    public InvalidURIException createInvalidURIException() {
+        return new InvalidURIException();
+    }
+
+    /**
+     * Create an instance of {@link DuplicateSubscriptionException }
+     * 
+     */
+    public DuplicateSubscriptionException createDuplicateSubscriptionException() {
+        return new DuplicateSubscriptionException();
+    }
+
+    /**
+     * Create an instance of {@link ReplenishEPCCache }
+     * 
+     */
+    public ReplenishEPCCache createReplenishEPCCache() {
+        return new ReplenishEPCCache();
+    }
+
+    /**
+     * Create an instance of {@link DepleteEPCCache }
+     * 
+     */
+    public DepleteEPCCache createDepleteEPCCache() {
+        return new DepleteEPCCache();
+    }
+
+    /**
+     * Create an instance of {@link RemoveAssocTableEntry }
+     * 
+     */
+    public RemoveAssocTableEntry createRemoveAssocTableEntry() {
+        return new RemoveAssocTableEntry();
+    }
+
+    /**
+     * Create an instance of {@link InvalidEPCException }
+     * 
+     */
+    public InvalidEPCException createInvalidEPCException() {
+        return new InvalidEPCException();
+    }
+
+    /**
+     * Create an instance of {@link GetSubscribers }
+     * 
+     */
+    public GetSubscribers createGetSubscribers() {
+        return new GetSubscribers();
+    }
+
+    /**
+     * Create an instance of {@link GetRNG }
+     * 
+     */
+    public GetRNG createGetRNG() {
+        return new GetRNG();
+    }
+
+    /**
+     * Create an instance of {@link DefineAssocTable }
+     * 
+     */
+    public DefineAssocTable createDefineAssocTable() {
+        return new DefineAssocTable();
+    }
+
+    /**
+     * Create an instance of {@link EPCCacheSpecValidationException }
+     * 
+     */
+    public EPCCacheSpecValidationException createEPCCacheSpecValidationException() {
+        return new EPCCacheSpecValidationException();
+    }
+
+    /**
+     * Create an instance of {@link ReplenishEPCCacheResult }
+     * 
+     */
+    public ReplenishEPCCacheResult createReplenishEPCCacheResult() {
+        return new ReplenishEPCCacheResult();
+    }
+
+    /**
+     * Create an instance of {@link DefineAssocTableResult }
+     * 
+     */
+    public DefineAssocTableResult createDefineAssocTableResult() {
+        return new DefineAssocTableResult();
+    }
+
+    /**
+     * Create an instance of {@link GetCCSpec }
+     * 
+     */
+    public GetCCSpec createGetCCSpec() {
+        return new GetCCSpec();
+    }
+
+    /**
+     * Create an instance of {@link ParameterForbiddenException }
+     * 
+     */
+    public ParameterForbiddenException createParameterForbiddenException() {
+        return new ParameterForbiddenException();
+    }
+
+    /**
+     * Create an instance of {@link DefineRNG }
+     * 
+     */
+    public DefineRNG createDefineRNG() {
+        return new DefineRNG();
+    }
+
+    /**
+     * Create an instance of {@link RNGValidationException }
+     * 
+     */
+    public RNGValidationException createRNGValidationException() {
+        return new RNGValidationException();
+    }
+
+    /**
+     * Create an instance of {@link UndefineRNG }
+     * 
+     */
+    public UndefineRNG createUndefineRNG() {
+        return new UndefineRNG();
+    }
+
+    /**
+     * Create an instance of {@link GetAssocTableEntries }
+     * 
+     */
+    public GetAssocTableEntries createGetAssocTableEntries() {
+        return new GetAssocTableEntries();
+    }
+
+    /**
+     * Create an instance of {@link NoSuchSubscriberException }
+     * 
+     */
+    public NoSuchSubscriberException createNoSuchSubscriberException() {
+        return new NoSuchSubscriberException();
+    }
+
+    /**
+     * Create an instance of {@link UndefineRNGResult }
+     * 
+     */
+    public UndefineRNGResult createUndefineRNGResult() {
+        return new UndefineRNGResult();
+    }
+
+    /**
+     * Create an instance of {@link GetEPCCache }
+     * 
+     */
+    public GetEPCCache createGetEPCCache() {
+        return new GetEPCCache();
+    }
+
+    /**
+     * Create an instance of {@link UndefineAssocTable }
+     * 
+     */
+    public UndefineAssocTable createUndefineAssocTable() {
+        return new UndefineAssocTable();
+    }
+
+    /**
+     * Create an instance of {@link GetAssocTableValue }
+     * 
+     */
+    public GetAssocTableValue createGetAssocTableValue() {
+        return new GetAssocTableValue();
+    }
+
+    /**
+     * Create an instance of {@link DefineRNGResult }
+     * 
+     */
+    public DefineRNGResult createDefineRNGResult() {
+        return new DefineRNGResult();
+    }
+
+    /**
+     * Create an instance of {@link RemoveAssocTableEntryResult }
+     * 
+     */
+    public RemoveAssocTableEntryResult createRemoveAssocTableEntryResult() {
+        return new RemoveAssocTableEntryResult();
+    }
+
+    /**
+     * Create an instance of {@link EmptyParms }
+     * 
+     */
+    public EmptyParms createEmptyParms() {
+        return new EmptyParms();
     }
 
     /**
@@ -547,14 +427,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DefineResult }
-     * 
-     */
-    public DefineResult createDefineResult() {
-        return new DefineResult();
-    }
-
-    /**
      * Create an instance of {@link Undefine }
      * 
      */
@@ -563,11 +435,139 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link UndefineEPCCache }
+     * 
+     */
+    public UndefineEPCCache createUndefineEPCCache() {
+        return new UndefineEPCCache();
+    }
+
+    /**
+     * Create an instance of {@link Immediate }
+     * 
+     */
+    public Immediate createImmediate() {
+        return new Immediate();
+    }
+
+    /**
+     * Create an instance of {@link UndefineAssocTableResult }
+     * 
+     */
+    public UndefineAssocTableResult createUndefineAssocTableResult() {
+        return new UndefineAssocTableResult();
+    }
+
+    /**
+     * Create an instance of {@link ImplementationException }
+     * 
+     */
+    public ImplementationException createImplementationException() {
+        return new ImplementationException();
+    }
+
+    /**
+     * Create an instance of {@link RemoveAssocTableEntries }
+     * 
+     */
+    public RemoveAssocTableEntries createRemoveAssocTableEntries() {
+        return new RemoveAssocTableEntries();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfString }
+     * 
+     */
+    public ArrayOfString createArrayOfString() {
+        return new ArrayOfString();
+    }
+
+    /**
+     * Create an instance of {@link DefineResult }
+     * 
+     */
+    public DefineResult createDefineResult() {
+        return new DefineResult();
+    }
+
+    /**
+     * Create an instance of {@link GetAssocTable }
+     * 
+     */
+    public GetAssocTable createGetAssocTable() {
+        return new GetAssocTable();
+    }
+
+    /**
+     * Create an instance of {@link Define }
+     * 
+     */
+    public Define createDefine() {
+        return new Define();
+    }
+
+    /**
+     * Create an instance of {@link ALEException }
+     * 
+     */
+    public ALEException createALEException() {
+        return new ALEException();
+    }
+
+    /**
+     * Create an instance of {@link GetEPCCacheContents }
+     * 
+     */
+    public GetEPCCacheContents createGetEPCCacheContents() {
+        return new GetEPCCacheContents();
+    }
+
+    /**
+     * Create an instance of {@link PutAssocTableEntriesResult }
+     * 
+     */
+    public PutAssocTableEntriesResult createPutAssocTableEntriesResult() {
+        return new PutAssocTableEntriesResult();
+    }
+
+    /**
      * Create an instance of {@link ParameterException }
      * 
      */
     public ParameterException createParameterException() {
         return new ParameterException();
+    }
+
+    /**
+     * Create an instance of {@link UnsubscribeResult }
+     * 
+     */
+    public UnsubscribeResult createUnsubscribeResult() {
+        return new UnsubscribeResult();
+    }
+
+    /**
+     * Create an instance of {@link DefineEPCCacheResult }
+     * 
+     */
+    public DefineEPCCacheResult createDefineEPCCacheResult() {
+        return new DefineEPCCacheResult();
+    }
+
+    /**
+     * Create an instance of {@link Unsubscribe }
+     * 
+     */
+    public Unsubscribe createUnsubscribe() {
+        return new Unsubscribe();
+    }
+
+    /**
+     * Create an instance of {@link DefineEPCCache }
+     * 
+     */
+    public DefineEPCCache createDefineEPCCache() {
+        return new DefineEPCCache();
     }
 
     /**
