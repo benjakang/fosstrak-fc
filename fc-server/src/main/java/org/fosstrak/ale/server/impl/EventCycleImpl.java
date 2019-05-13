@@ -445,7 +445,6 @@ public final class EventCycleImpl implements EventCycle, Runnable {
 	public void run() {
 		
 		lastEventCycleTags = new HashSet<Tag>();
-		
 		// wait for the start
 		// running will be set by the ReportsGenerator when the EventCycle
 		// has a subscriber

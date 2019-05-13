@@ -1,12 +1,13 @@
 import junit.framework.TestCase;
 import org.epcglobalinc.tdt.LevelTypeList;
+import org.fosstrak.ale.server.readers.test.TestAdaptor;
 import org.fosstrak.tdt.TDTEngine;
 
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestCaseDemo
-{
+public class TestCaseDemo {
 
     private static TDTEngine engine = null;
 
@@ -14,14 +15,26 @@ public class TestCaseDemo
 
     public static void main(String[] args) {
         setUp();
-        testPage13Staged();
+//        testPage13Staged();
     }
 
     protected static void setUp() {
         params = new HashMap<String,String>();
         if (engine == null) {
             try {
-                engine = new TDTEngine("C:\\Users\\kangbingjie\\.m2\\repository\\org\\fosstrak\\tdt\\tdt\\1.0.0\\tdt-1.0.0");
+//                engine = new TDTEngine("C:/Users/kangbingjie/.m2/repository/org/fosstrak/tdt/tdt/1.0.0/tdt-1.0.0");
+
+//                engine = new TDTEngine("C:\\Users\\kangbingjie\\.m2\\repository\\org\\fosstrak\\tdt\\tdt\\1.0.0\\tdt-1.0.0");
+//                engine = new TDTEngine(new URL(TDTEngine.class.getResource("") , "../../../schemes/"),
+//                        new URL(TDTEngine.class.getResource("") , "../../../auxiliary/ManagerTranslation.xml"));
+                URL path = TDTEngine.class.getClassLoader().getResource("tdtschemes/");
+//                URL path = new URL("file", "", "C:/Users/kangbingjie/.m2/repository/org/fosstrak/tdt/tdt/1.0.0/tdt-1.0.0/");
+//                URL path = new URL(TDTEngine.class.getResource("") , "../../../");
+                URL scheme = new URL(path, "schemes/");
+                URL auxGEPC64table = new URL(path, "auxiliary/ManagerTranslation.xml");
+                engine = new TDTEngine(auxGEPC64table,scheme);
+//                System.out.println(new URL(TDTEngine.class.getResource("") , "../../../schemes/"));
+//                System.out.println(TDTEngine.class.getClassLoader().getResource(""));
             }
             catch (Exception e) {
                 e.printStackTrace(System.err);
